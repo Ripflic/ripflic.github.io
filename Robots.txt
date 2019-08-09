@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /files
+Disallow: /images
+Disallow: /fplayer
+Allow: *.css
+Allow: *.js
+Clean-param: search&filter&sort
+Host: ripflic.tv
+Sitemap: http://ripflic.tv/sitemap.xml
