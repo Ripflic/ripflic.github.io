@@ -1,0 +1,352 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: #f5f5f5;
+    transition: all .2s ease;
+    outline: 0;
+    text-decoration: none;
+}
+div {display: block;}
+body{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+    color: #292c33;
+    font-weight: 400;
+    background: #e5e6e8;
+    background-size: cover;
+    position: relative;
+}
+
+/*--header--*/
+#header{
+    background-color: #555;
+    width: 100%;
+    height: 90px;
+    padding: 35px 0;
+    position: fixed;
+    z-index: 9999;
+}
+.nav{
+    display: flex;
+    width: 1150px;
+    margin: 0 auto;
+}
+.logo{
+    margin-right: auto;
+}
+.logo a{
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.logo a:hover{
+    color: #fa6e52;
+}
+.navbar{
+    margin-left: auto;
+    font-size: 15px;
+}
+.navbar a{
+    text-align: center;
+    padding: 10px 5px;
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+.navbar a:hover{
+    color: #000;
+    background: #fff;
+}
+/*--header--*/
+  
+/*---контент материалов---*/
+.conteiner:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.conteiner { display: inline-block; }
+/* start commented backslash hack \*/
+* html .conteiner { height: 1%; }
+.conteiner { display: block; }
+/* close commented backslash hack */
+
+.main {
+    overflow: hidden;
+}
+.wrapper1 {
+    margin: auto;
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 120px;
+}
+.slaider{
+    margin: auto;
+}
+.slaider img{
+    width: 1200px;
+}
+#content {
+    margin-top: 28px;
+    overflow: hidden;
+    width: 100%;
+}
+.head-title {
+    width: 100%;
+    margin-bottom: 25px;
+    height: 63px;
+    line-height: 62px;
+    border-bottom: 1px solid #cdcdcd;
+    font-size: 20px;
+    text-align: center;
+}
+.head-title span {
+    display: inline-block;
+    border-bottom: 1px solid #fa6e52;
+}
+.items-box {
+    display: table;
+    width: 90%;
+    margin: auto;
+}
+.item-box {
+    width: 191px;
+    float: left;
+    margin: 1%;
+    margin-bottom: 5%;
+    background: #fff;
+    padding: 2px;
+    transition: all .3s;
+    border-radius: 2px;
+}
+.item-box a{
+    color: #000;
+}
+.item-box:hover {
+    background: #fa6e52;
+}
+.item-box:hover a {
+    color: #fff;
+}
+.item-box .img {
+    width: 100%;
+    height: 265px;
+    overflow: hidden;
+}
+item-box .img::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.65) 100%);
+}
+.item-box .img img {
+    width: 100%;
+    height: 100%;
+}
+.item-box .title {
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0 8px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 15px;
+}
+/*---контент материалов---*/
+
+/*--- footer ---*/
+.footer {
+    background-color: #334353;
+    width: 100%;
+    height: 100px;
+    padding: 30px 0;
+}
+.footer-inner {
+    display: flex;
+    width: 1150px;
+    margin: 0 auto;
+}
+.foot-copyr {
+    margin-right: auto;
+    color: #fff;
+}
+.foot-copyr a:hover{
+    color: #fa6e52;
+}
+.counters-box {
+    
+}
+/*--- footer ---*/
+
+/*---Кнопка наверх---*/  
+.btn_up{
+    width:70px;
+    height:70px;
+    opacity:0.7;
+    position:fixed;
+    bottom:70px;
+    right:70px;
+    display:none;
+    padding: 25px 0;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 35px;
+    font-weight: bold;
+    background: #000;
+    text-align: center;
+}
+/*---Кнопка наверх---*/ 
+
+/*---полоса scrollbar---*/
+::-webkit-scrollbar{
+    width:13px;
+}
+::-webkit-scrollbar-thumb{
+    border-width:1px 1px 1px 2px;
+    border-color: #777;
+    background-color: #aaa;
+}
+::-webkit-scrollbar-thumb:hover{
+    border-width: 1px 1px 1px 2px;
+    border-color: #555;
+    background-color: #777;
+}
+::-webkit-scrollbar-track{
+    border-width:0;
+}
+::-webkit-scrollbar-track:hover{
+    border-left: solid 1px #aaa;
+    background-color: #eee;
+}
+/*---полоса scrollbar---*/
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px) {
+	.nav{
+        width: 991px;
+    }
+    .logo a {
+        font-size: 20px;
+    }
+    .navbar {
+        font-size: 10px;
+    }
+    .navline {
+        bottom: -148px;
+    }
+    .line {
+        max-width: 991px;
+    }
+    .line a {
+        font-size: 11px;
+    }
+    .wrapper1 {
+        max-width: 991px;
+    }
+    .slaider img {
+        width: 991px;
+    }
+    .head-title {
+        font-size: 15px;
+    }
+    .item-box .title {
+        font-size: 10px;
+    }
+    .reliz_image img {
+        width: 220px;
+    }
+    dt {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+    .reliz_right {
+        padding-left: 0px;
+    }
+    .eText {
+        font-size: 0.8em;
+    }
+    .post-tags {
+        font-size: 12px;
+    }
+    .button1 {
+        font-size: 12px;
+    }
+    .footer-inner {
+        width: 991px;
+        font-size: 10px;
+    }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1030px) {
+	.nav{
+        width: 767px;
+    }
+    .logo a {
+        font-size: 15px;
+    }
+    .navbar {
+        font-size: 9px;
+    }
+    .navline {
+        bottom: -128px;
+    }
+    .line {
+        max-width: 767px;
+        padding: 10px;
+        height: 43px;
+    }
+    .line a {
+        font-size: 8px;
+    }
+    .wrapper1 {
+        max-width: 767px;
+        margin: 120px auto;
+    }
+    .slaider img {
+        width: 767px;
+    }
+    .head-title {
+        font-size: 14px;
+    }
+    .items-box {
+        width: 90%;
+        margin: auto;
+    }
+    .reliz_image img {
+        width: 220px;
+    }
+    dt {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+    .reliz_right {
+        padding-left: 0px;
+    }
+    .eText {
+        font-size: 0.8em;
+    }
+    .post-tags {
+        font-size: 12px;
+    }
+    .button1 {
+        font-size: 12px;
+    }
+    .screen-img {
+        width: 25%;
+    }
+    .footer-inner {
+        width: 767px;
+        font-size: 10px;
+    }
+}
